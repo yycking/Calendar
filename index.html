@@ -262,7 +262,7 @@
             count++;
         }
         while (count % 7 != 0) {
-            calendar += "<td class=\"next-month\">" + (count - date.getDate() - 1) + "</td>"
+            calendar += "<td class=\"next-month\">" + (count - thisMonth.getDate() + 1) + "</td>"
             count++;
         }
         calendar += "<tr>";
